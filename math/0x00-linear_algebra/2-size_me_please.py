@@ -4,7 +4,8 @@
 
 def matrix_shape(matrix):
     """ Get the shape of a matrix """
-    arr = [len(matrix), len(matrix[0])]
-    if len(matrix[0]) > 2:
-        arr.append(len(matrix[0][0]))
+    arr = []
+    if type(matrix) is list:
+        arr.append(len(matrix))
+        arr += matrix_shape(matrix[0])
     return arr
