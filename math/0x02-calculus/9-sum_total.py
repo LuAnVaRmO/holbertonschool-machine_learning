@@ -5,7 +5,7 @@ Sigma of í square
 
 
 def summation_i_squared(n):
-    """ that calculates [\sum_{i=1}^{n} i^2] """
+    """ that calculates operation """
     if type(n) is not int:
         return None
     elif type(n) is int and n <= 0:
